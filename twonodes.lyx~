@@ -1,0 +1,309 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+
+\usepackage[T1]{fontenc}
+
+\usepackage[tracking]{microtype}
+
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\linespread{1.5}              % Palatino leads a little more leading
+
+% Euler for math and numbers
+% \usepackage[euler-digits,small]{eulervm}
+\usepackage{eulervm}
+\usepackage{hyperref}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Model
+\end_layout
+
+\begin_layout Itemize
+There are 2 exchanges 
+\begin_inset Formula $A,B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Exchange 
+\begin_inset Formula $i$
+\end_inset
+
+ is described by the demand curve:
+ 
+\begin_inset Formula 
+\[
+p_{i}-\psi=-\gamma_{i}\left(q_{i}+x_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ are i.i.d.
+ random variables.
+ 
+\end_layout
+
+\begin_layout Itemize
+Arbitrageurs pay fixed cost 
+\begin_inset Formula $c$
+\end_inset
+
+ to enter,
+ and contribute infinitisemal demand curve:
+ 
+\begin_inset Formula 
+\[
+z_{ij}=\left(p_{j}-p_{i}\right)
+\]
+
+\end_inset
+
+Where WLOG we normalize arbitrageurs so that a measure 1 of arbitrageurs contributes 1 unit of flow per unit price.
+ 
+\end_layout
+
+\begin_layout Itemize
+Hence with a measure 
+\begin_inset Formula $\mu_{ij}$
+\end_inset
+
+ of arbitrageurs on link 
+\begin_inset Formula $ij$
+\end_inset
+
+ the demand curve is:
+ 
+\begin_inset Formula 
+\[
+z_{ij}=\mu_{ij}\left(p_{j}-p_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+What should happen is we get a congestion externality:
+ there is too much entry relative to the arb-profit-maximizing outcome
+\end_layout
+
+\begin_layout Itemize
+Is entry socially efficient?
+ 
+\end_layout
+
+\begin_layout Itemize
+PLACEHOLDER EQUATIONS:
+\end_layout
+
+\begin_layout Itemize
+Arb payoffs:
+ 
+\begin_inset Formula 
+\begin{equation}
+PLACEHOLDER\label{eq:2nodearbpayoffs}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Writing
+\end_layout
+
+\begin_layout Itemize
+(
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2nodearbpayoffs"
+
+\end_inset
+
+) shows that an arbitrageur's expected payoff is increasing in the shock variances 
+\begin_inset Formula $\sigma_{A}^{2},\sigma_{B}^{2}$
+\end_inset
+
+ and the market depths 
+\begin_inset Formula $\gamma_{A},\gamma_{B}$
+\end_inset
+
+ (CHECK);
+ arb profits are higher when inventory shocks are larger,
+ and when markets are deeper.
+ 
+\end_layout
+
+\begin_layout Itemize
+Moreover,
+ the payoff is 
+\emph on
+linear 
+\emph default
+in 
+\begin_inset Formula $\sigma_{A}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{B}^{2}$
+\end_inset
+
+:
+ arb payoffs in the full game equal the sum of expected payoffs in one market where only 
+\begin_inset Formula $A$
+\end_inset
+
+ is shocked,
+ and another where only 
+\begin_inset Formula $B$
+\end_inset
+
+ is shocked.
+ This convenient property will generalize to arbitarily large networks.
+ 
+\end_layout
+
+\begin_layout Itemize
+In (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2nodearbpayoffs"
+
+\end_inset
+
+),
+ arb payoffs are also decreasing in 
+\begin_inset Formula $\mu_{AB}$
+\end_inset
+
+.
+ Arbitrageurs' entry decisions are thus 
+\emph on
+strategic substitutes
+\emph default
+.
+ Thus,
+ there is a unique entry equilibrium,
+ where the marginal arbitrageur's profits are exactly equal to the entry cost 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

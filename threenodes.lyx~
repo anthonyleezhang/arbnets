@@ -1,0 +1,934 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+
+\usepackage[T1]{fontenc}
+
+\usepackage[tracking]{microtype}
+
+\usepackage[sc,osf]{mathpazo}   % With old-style figures and real smallcaps.
+\linespread{1.5}              % Palatino leads a little more leading
+
+% Euler for math and numbers
+% \usepackage[euler-digits,small]{eulervm}
+\usepackage{eulervm}
+\usepackage{hyperref}
+
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-ams-extended
+\end_modules
+\maintain_unincluded_children no
+\language english
+\language_package default
+\inputencoding auto-legacy
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 3cm
+\rightmargin 2.5cm
+\bottommargin 3cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Subsection
+Three Nodes
+\end_layout
+
+\begin_layout Itemize
+There are 3 exchanges 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Exchange 
+\begin_inset Formula $i$
+\end_inset
+
+ is described by the demand curve:
+ 
+\begin_inset Formula 
+\[
+p_{i}-\psi=-\gamma_{i}\left(q_{i}+x_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+CHECK:
+ Gamma or inverse gamma?
+ Which leads to cleaner expressions?
+ Try a few versions and see.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ are i.i.d.
+ random variables.
+ 
+\end_layout
+
+\begin_layout Itemize
+Arbitrageurs pay fixed cost 
+\begin_inset Formula $c$
+\end_inset
+
+ to enter,
+ and contribute infinitisemal demand curve:
+\begin_inset Formula 
+\[
+z_{ij}=\left(p_{j}-p_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Hence with a measure 
+\begin_inset Formula $\mu_{ij}$
+\end_inset
+
+ of arbitrageurs on link 
+\begin_inset Formula $ij$
+\end_inset
+
+ the demand curve is:
+ 
+\begin_inset Formula 
+\[
+z_{ij}=\mu_{ij}\left(p_{j}-p_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+There's an extra positive spillover since arbitrage on one link increases profits of neighbor links
+\end_layout
+
+\begin_layout Subsubsection
+Expressions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+PLACEHOLDER\label{eq:3nodeABarbpayoff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+PLACEHOLDER\label{eq:3nodeBCarbpayoff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+As in the two-node example of Subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:twonodes"
+
+\end_inset
+
+,
+ arb payoffs are linear in the shocks variances 
+\begin_inset Formula $\sigma_{A}^{2},\sigma_{B}^{2},\sigma_{C}^{2}$
+\end_inset
+
+,
+ so we can analyze the full game as the sum of simpler games where only a single node receives inventory shocks.
+ 
+\end_layout
+
+\begin_layout Itemize
+Arbitrageurs on a link compete with each other:
+ unambiguously,
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3nodeABarbpayoff"
+
+\end_inset
+
+) is decreasing in 
+\begin_inset Formula $\mu_{AB}$
+\end_inset
+
+,
+ and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3nodeBCarbpayoff"
+
+\end_inset
+
+) in 
+\begin_inset Formula $\mu_{BC}$
+\end_inset
+
+.
+ The strategic interactions 
+\emph on
+across 
+\emph default
+links are more subtle.
+ 
+\end_layout
+
+\begin_layout Itemize
+Considering only 
+\begin_inset Formula $\sigma_{B}^{2}$
+\end_inset
+
+ terms in (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3nodeABarbpayoff"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3nodeBCarbpayoff"
+
+\end_inset
+
+),
+ arb payoffs are:
+\begin_inset Formula 
+\begin{equation}
+PLACEHOLDER\label{eq:3nodesigBonlyarbpayoffs}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $AB$
+\end_inset
+
+ payoffs are decreasing in 
+\begin_inset Formula $\mu_{BC}$
+\end_inset
+
+,
+ and vice versa,
+ implying that 
+\begin_inset Formula $AB$
+\end_inset
+
+ and 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbs are 
+\emph on
+substitutes
+\emph default
+ with respect to inventory shocks at 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Intuitively,
+ arbitrageurs respectively profit from arbitraging inventory shocks in 
+\begin_inset Formula $B$
+\end_inset
+
+ into the sinks 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+;
+ if shocks flow from 
+\begin_inset Formula $B$
+\end_inset
+
+ to 
+\begin_inset Formula $C$
+\end_inset
+
+,
+ there are less price deviations remaining for 
+\begin_inset Formula $AB$
+\end_inset
+
+ arbitrageurs to exploit.
+ 
+\end_layout
+
+\begin_layout Itemize
+Considering only 
+\begin_inset Formula $\sigma_{A}^{2}$
+\end_inset
+
+ terms (which by symmetry is equivalent to the 
+\begin_inset Formula $\sigma_{C}^{2}$
+\end_inset
+
+ case),
+ arb payoffs are:
+\begin_inset Formula 
+\begin{equation}
+PLACEHOLDER\label{eq:3nodesigAonlyarbpayoffs}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $AB$
+\end_inset
+
+ payoffs are now increasing in 
+\begin_inset Formula $\mu_{BC}$
+\end_inset
+
+,
+ and vice versa,
+ so 
+\begin_inset Formula $AB$
+\end_inset
+
+ and 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbs are 
+\emph on
+complements 
+\emph default
+with respect to shocks at 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Intuitively,
+ 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbs increase in 
+\begin_inset Formula $\mu_{AB}$
+\end_inset
+
+ because 
+\begin_inset Formula $A$
+\end_inset
+
+-shocks transmit more efficiently into 
+\begin_inset Formula $B$
+\end_inset
+
+,
+ allowing 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbs to profit from arbing these shocks into 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Conversely,
+ 
+\begin_inset Formula $AB$
+\end_inset
+
+ arbs also benefit from increasing 
+\begin_inset Formula $\mu_{BC}$
+\end_inset
+
+,
+ because this increases effective 
+\emph on
+market depth
+\emph default
+ at the 
+\begin_inset Formula $B$
+\end_inset
+
+-node.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+CHECK:
+ FORMALIZE THIS CONCEPT
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+When there are more 
+\begin_inset Formula $AB$
+\end_inset
+
+ arbs,
+ 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbitrageur trades move 
+\begin_inset Formula $B$
+\end_inset
+
+ prices less,
+ meaning 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbitrageurs can trade larger quantities...
+ CHECK INTUITION
+\end_layout
+
+\begin_layout Itemize
+CHECK:
+ Is there ever a case where X benefits from Y but not vice versa?
+ Are the signs necessarily the same?
+ Could be a question for ChatGPT to play with...
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Summary
+\end_layout
+
+\begin_layout Itemize
+In the general case,
+ with shocks at all nodes,
+ arb payoffs are simply the sum of payoffs from the three ``isolated-shock'' games.
+ Whether 
+\begin_inset Formula $AB$
+\end_inset
+
+ and 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbs are substitutes or complements in the full game is thus driven by the relative sizes of 
+\begin_inset Formula $\sigma_{A},\sigma_{C}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{B}$
+\end_inset
+
+,
+ that is:
+ 
+\end_layout
+
+\begin_layout Itemize
+CHECK PUT EXPRESSION 
+\end_layout
+
+\begin_layout Subsection
+Strategic Complementarity
+\end_layout
+
+\begin_layout Itemize
+Strategic complementarities imply that the arbitrageur entry game can have multiple equilibria.
+ 
+\end_layout
+
+\begin_layout Itemize
+Panel A of Figure CHECK shows an example where 
+\begin_inset Formula $\gamma_{B}=\infty$
+\end_inset
+
+ – the 
+\begin_inset Formula $B$
+\end_inset
+
+ node has no capacity,
+ and thus serves only as a intermediate link between 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\begin_inset Formula $AB$
+\end_inset
+
+ and 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbitrageurs are thus perfect complements with respect to shocks at 
+\begin_inset Formula $C$
+\end_inset
+
+ (or 
+\begin_inset Formula $A$
+\end_inset
+
+):
+ if 
+\begin_inset Formula $\mu_{AB}=0$
+\end_inset
+
+,
+ then 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbitrageurs make 0 profits,
+ since 
+\begin_inset Formula $C$
+\end_inset
+
+ shocks ``travel'' to 
+\begin_inset Formula $A$
+\end_inset
+
+ through 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Thus,
+ there is always a trivial equilibrium where 
+\begin_inset Formula $\mu_{AB}=\mu_{BC}=0$
+\end_inset
+
+;
+ no arbitrageurs enter,
+ since entry at either link in isolation generates no profits.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+This could be thought of as representing...
+ CHECK
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Panel B shows a four-node example with indeterminacy in equilibria.
+ Nodes 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $D$
+\end_inset
+
+ have inventory capacity (CHECK FORMULA);
+ nodes 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ are two possible ``transit'' nodes.
+ There are clearly at least two nontrivial equilibria:
+ trade could route through 
+\begin_inset Formula $B$
+\end_inset
+
+,
+ with 
+\begin_inset Formula $\mu_{AB}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu_{BD}$
+\end_inset
+
+ positive,
+ or through 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+In the general case...
+\end_layout
+
+\begin_layout Itemize
+CHECK:
+ Discuss welfare?
+\end_layout
+
+\begin_layout Subsection
+Summary
+\end_layout
+
+\begin_layout Itemize
+Substantial richness is possible even in the three-node case.
+ 
+\end_layout
+
+\begin_layout Itemize
+We proceed to analyze the general case...
+\end_layout
+
+\begin_layout Section
+Junk ish below
+\end_layout
+
+\begin_layout Itemize
+a
+\end_layout
+
+\begin_layout Itemize
+a
+\end_layout
+
+\begin_layout Itemize
+the general case of many inventory shocks is simply the sum of payoffs from the isolated cases
+\end_layout
+
+\begin_layout Itemize
+arbitrageur payoffs
+\end_layout
+
+\begin_layout Itemize
+In the general case of inventory shocks at all nodes,
+ the model separates into the additive superposition of shocks at each node.
+ That is,
+ 
+\begin_inset Formula $AB$
+\end_inset
+
+ arbs and 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbs' profits are simply the sum of their profits in three separate games,
+ where we consider isolated shocks at the 
+\begin_inset Formula $A,B$
+\end_inset
+
+ and 
+\begin_inset Formula $C$
+\end_inset
+
+ nodes.
+\end_layout
+
+\begin_layout Itemize
+In each separate game,
+ as we have shown,
+ arbitrageur payoffs are unambiguously either complements (
+\begin_inset Formula $A,C$
+\end_inset
+
+ nodes) or substitutes (
+\begin_inset Formula $B$
+\end_inset
+
+ node).
+ Whether 
+\begin_inset Formula $AB$
+\end_inset
+
+ and 
+\begin_inset Formula $BC$
+\end_inset
+
+ interactions are complements or substitutes in the full game is thus driven simply by the relative sizes of 
+\begin_inset Formula $\sigma_{A},\sigma_{C}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{B}$
+\end_inset
+
+,
+ that is:
+ CHECK PUT EXPRESSION 
+\end_layout
+
+\begin_layout Itemize
+This is a technically convenient simplification
+\end_layout
+
+\begin_layout Itemize
+While this is obviously a modelling simplification,
+ we view it as
+\end_layout
+
+\begin_layout Itemize
+a
+\end_layout
+
+\begin_layout Itemize
+a
+\end_layout
+
+\begin_layout Itemize
+The strategic interactions between
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $AB$
+\end_inset
+
+ arbs only profit to the extent that 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbitrageurs
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $AB$
+\end_inset
+
+ arbitrageurs benefit from increasing 
+\begin_inset Formula $\mu_{BC}$
+\end_inset
+
+,
+ 
+\end_layout
+
+\begin_layout Itemize
+since 
+\begin_inset Formula $BC$
+\end_inset
+
+ arbitrageurs transmit
+\end_layout
+
+\begin_layout Itemize
+Arbitrageurs are 
+\end_layout
+
+\begin_layout Itemize
+A core idea of our paper is that arbitrageu
+\end_layout
+
+\begin_layout Subsection
+Notes
+\end_layout
+
+\begin_layout Section
+Conjectures
+\end_layout
+
+\begin_layout Itemize
+In a long enough chain,
+ equilibrium arbitrage can be arbitrarily lower than socially efficient arbitrage
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Say,
+ we can have a limit of markets with positive efficient arbitrage,
+ where equilibrium arbitrage goes to zero
+\end_layout
+
+\begin_layout Itemize
+While stylized,
+ illustrates...
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+This isn't captured through vertical integration due to the nature of externalities across links
+\end_layout
+
+\begin_layout Section
+Triangles
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A,C$
+\end_inset
+
+ connections are actually ``substitutes'' for the 
+\begin_inset Formula $A,B$
+\end_inset
+
+ and 
+\begin_inset Formula $B,C$
+\end_inset
+
+ chain and should reduce its profits
+\end_layout
+
+\begin_layout Itemize
+In some sense there should be ``over-entry'' in ``parallel path'' arbitrages due to a similar ``congestion'' externality
+\end_layout
+
+\begin_layout Itemize
+A guideline is:
+ bringing more noise to your node is good for you,
+ bringing your noise away is bad for you
+\end_layout
+
+\begin_layout Itemize
+This seems to be characterizable easily in the ``one noisy node'' case
+\end_layout
+
+\begin_layout Itemize
+Oh,
+ independent shocks and additivity of variance means that everything is the sum over each individual ``one noisy node'',
+ there's a nice simple linear characterization
+\end_layout
+
+\begin_layout Itemize
+For any given noise shock,
+ it's probably possible to characterize clearly (more or less) whether two nodes are substitutes or complements,
+ and then we use linearity to sum everything up.
+ Wow,
+ that's nice!!
+ So there's just a weighted average representation
+\end_layout
+
+\begin_layout Itemize
+Conjecture:
+ banning 
+\begin_inset Formula $A,C$
+\end_inset
+
+ connections could leave all arbitrageur profits higher (but may not be good for society?)
+\end_layout
+
+\begin_layout Itemize
+Easy to do equilibrium selection around ``bad paths'' (ABCD link instead of AEC link)
+\end_layout
+
+\begin_layout Section
+Braess' paradox
+\end_layout
+
+\begin_layout Itemize
+A little more complicated but can consider the classic Braess example and see if we can get anything out of it
+\end_layout
+
+\begin_layout Itemize
+https://www.nature.com/articles/352699a0
+\end_layout
+
+\end_body
+\end_document

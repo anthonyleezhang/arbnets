@@ -1,0 +1,328 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children no
+\language american
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008080
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Section
+General Nodes
+\end_layout
+
+\begin_layout Itemize
+There are 
+\begin_inset Formula $N$
+\end_inset
+
+ exchanges.
+ Each exchange is described by the demand curve:
+ 
+\begin_inset Formula 
+\begin{equation}
+p_{i}-\psi=-\gamma_{i}\left(z_{i}+x_{i}\right)\label{eq:demandequation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We assume that some subset of exchanges are possible to arbitrage against each other.
+ Let 
+\begin_inset Formula $\mathcal{A}$
+\end_inset
+
+ be the set of 
+\begin_inset Formula $\left(i,j\right)$
+\end_inset
+
+ pairs which can be arbitraged.
+ Each infinitisemal arbitrageur on link 
+\begin_inset Formula $i,j$
+\end_inset
+
+ contributes infinitisemal demand curve:
+ 
+\begin_inset Formula 
+\[
+z_{ij}=\left(p_{j}-p_{i}\right)
+\]
+
+\end_inset
+
+Hence,
+ with a measure 
+\begin_inset Formula $\mu_{ij}$
+\end_inset
+
+ of arbitrageurs on link 
+\begin_inset Formula $ij$
+\end_inset
+
+ the demand curve is:
+ 
+\begin_inset Formula 
+\begin{equation}
+z_{ij}=\mu_{ij}\left(p_{j}-p_{i}\right)\label{eq:arbitrageequation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can rearrange these slightly to:
+ 
+\begin_inset Formula 
+\begin{equation}
+\left(p_{i}-\psi\right)+\gamma_{i}z_{i}=x_{i}\label{eq:demandeqn2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+z_{ij}-\mu_{ij}\left(p_{j}-p_{i}\right)=0\label{eq:arbeqn2}
+\end{equation}
+
+\end_inset
+
+The equilibrium conditions can thus be written as the matrix equation:
+ 
+\begin_inset Formula 
+\[
+\boldsymbol{M}\left(\begin{array}{c}
+p_{1}-\psi\\
+\vdots\\
+p_{N}-\psi\\
+z^{1}\\
+\vdots\\
+z^{N-1}
+\end{array}\right)=\left(\begin{array}{c}
+x_{1}\\
+\vdots\\
+x_{N}\\
+0\\
+\vdots\\
+0
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+CHECK:
+ Characterize arbitrageur expected payoffs;
+ I conjecture these are simply proportional to 
+\begin_inset Formula 
+\[
+\left(p_{j}-p_{i}\right)^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Mathematically,
+ for any vector of arbitrageur masses 
+\begin_inset Formula $\mathbf{\mu_{ij}}$
+\end_inset
+
+ between pairs of nodes,
+ our model is isomorphic to a physical 
+\emph on
+spring system
+\emph default
+,
+ where exchanges are nodes,
+ prices are displacements,
+ and nodes 
+\begin_inset Formula $i,j$
+\end_inset
+
+ are connected by a spring with rigidity proportional to 
+\begin_inset Formula $\mu_{ij}$
+\end_inset
+
+.
+ Links with large arbitrage masses are connected by rigid springs,
+ and thus their prices cannot deviate substantially from each other.
+ A shock to one node propagates imperfectly through the spring system,
+ so nodes further away from the initial shock are influenced less.
+ As in spring systems,
+ it is mathematically convenient in our model that shocks influence outcomes 
+\emph on
+linearly
+\emph default
+;
+ this implies that all model outcomes are simply linear combinations of the shock variables.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Complementarity and substitutability.
+ 
+\end_layout
+
+\begin_layout Itemize
+Consider arbitrageurs on a link 
+\begin_inset Formula $i,j$
+\end_inset
+
+.
+ They are either substitutes or complements for 
+\begin_inset Formula $\tilde{i},\tilde{j}$
+\end_inset
+
+,
+ with respect to the inventory shock at any node.
+ This can be calculated by...
+\end_layout
+
+\begin_layout Itemize
+Whether 
+\begin_inset Formula $i,j$
+\end_inset
+
+ and 
+\begin_inset Formula $\tilde{i},\tilde{j}$
+\end_inset
+
+ are substitutes or complements,
+ across all shocks,
+ simply depends on the weighted average of...
+ CHECK
+\end_layout
+
+\begin_layout Section
+Games we can play (CHECK FILL LATER)
+\end_layout
+
+\begin_layout Subsection
+Arbitrarily low arbitrage
+\end_layout
+
+\begin_layout Itemize
+CHECK:
+ Do the limit showing that arbitrage can become arbitrarily bad due to spillovers in a long chain
+\end_layout
+
+\begin_layout Subsection
+Bad pathing
+\end_layout
+
+\begin_layout Itemize
+CHECK:
+ Do the ``shortcut link'' example
+\end_layout
+
+\begin_layout Subsection
+Braess' Paradox
+\end_layout
+
+\begin_layout Itemize
+CHECK:
+ Try to figure this out
+\end_layout
+
+\begin_layout Subsection
+Other examples
+\end_layout
+
+\begin_layout Itemize
+Think of other clever examples
+\end_layout
+
+\end_body
+\end_document
