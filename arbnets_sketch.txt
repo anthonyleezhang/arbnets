@@ -1,0 +1,75 @@
+
+- The Network Structure of Arbitrage Competition
+- The Structure of Arbitrage Competition
+- Arbitrage Competition
+- Arbitrage Competition in Financial Asset Networks
+
+Write abstract
+
+- Arbitrageurs complements or substitutes?
+- Arbitrageurs are endogeneously "vertical" or "horizontal" competitors based on the topology of the network and the structure of noise trade
+- Market power can lead to under- or over-entry relative to the efficient/(competitive) benchmark
+- Depends on the nature of competition
+
+- Competition in IO as a baseline
+- What is the nature of competition between financial arbitrageurs?
+	- How is it influenced by the unique industrial structure of financial markets influence
+- What are the implications for competition policy, applied to arbitrageurs in financial markets?
+	- Cite Taisiya's concentration paper
+	- Cite antitrust lawsuits against arbs
+
+MODEL DEFENSE:
+- Need a notion of costly "arbitrageur entry". It is natural to make this continuous. Risk limits; capital costs;
+	- Cite limits to arbitrage literature
+	- Risk limits are from basis risk between imperfectly designed instruments (can cleverly cite the Fischer Black arb paper)
+	- Can cite the CIP deviations paper for capital costs
+- Our "nodes" are generally financial "products"
+	- Big list of examples of "node chains"
+	- From actual exchanges/venues, to more abstract "related financial products"
+	- Pairs trading in equities
+	- Restrictions on link drawing:
+		- VIX ETF to VIX, VIX to options, options to SP500
+		- FX "ring structure" supporting existence of a core-periphery network, bc periphery nodes are hard to arb against each other logistically
+- Arbs reasonably are concentrated in a midrange of concentration in financial markets in practice
+	- Ranging from 3 (Taisiya)
+	- To like 10 (FX markets)
+	- "Large" arbs exist, like Citadel
+- Reasonable to model absorbing nodes has having some kind of capacity
+	- Closing of price gaps in crypto (cite me)
+	- Examples in dealer markets, CIP, etc.
+	- Umang Khetan's JMP etc. 
+
+RESULTS:
+- Entry can be arbitrarily low, rel benchmarks
+	- "chain" example
+	- "Middle link" limit as the gamma of the middle link goes to 0
+- What happens when there's vertical integration?
+- Is there policy around whether integration is allowed? 
+	- ETF arbitrage?
+	- Bank restrictions on spot crypto
+	- Hedge fund restrictions on cross-border arbitrage
+	- Foreign markets
+	- Prime brokerage restrictions on what's tradable
+- "Source"/"sinks" patterns lead to excess entry
+- "Chain" patterns lead to under-entry
+- In the core-periphery example, there is over-entry if noise is basically "diffusive", and under-entry if it's basically "spoke-to-hubs"
+
+- Market definition and IO:
+	- Market definition is already hard!
+	- Makes it harder here because industries interact; sometimes "vertically" and sometimes "horizontally"
+	- Market definitions are always fluid. In arbitrage networks, the "source" vs "sink" distinction means that there is not a single I-O structure
+	- This can be made pretty elegant writing wise
+- HORIZONTAL COMPETITION
+	- Concentration in "source-sink" pattern markets has tradeoffs. It leads to higher markups. However, it also alleviates entry distortion. 
+	- Some degree of competition
+	- Competition, combined with a tax on entry, can implement the constrained-efficient benchmark
+	- Mimics actually what we see in practice: entry, but with some restrictions, but relatively low HHIs.
+- VERTICAL COMPETITION:
+	- "Chains" actually benefit from vertical integration
+		- CHECK: Cite IO stuff
+	- "Internalization" both lowers markups and increases capacity building
+	- As in classic literature, overwhelmingly good
+	- Crypto exchange: large inefficiencies from lack of vertical integration
+- CHECK: Decompose losses into entry/capacity and markup force; classic IO!
+
+
